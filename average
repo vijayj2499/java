@@ -1,0 +1,23 @@
+//Write a function to find the average of a set of numbers passed as arguments.
+
+
+public class Main
+{   
+  static void avg(int ...arr)
+    {
+        int sum=0,n=0;
+        for(int i:arr)
+        {
+            sum=sum+i;
+            n++;
+        }
+        System.out.println(sum/n);
+        
+}
+	public static void main(String[] args) {
+avg(1,2,3,4,5);    
+	
+		
+	
+}
+}
