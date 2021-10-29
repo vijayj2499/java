@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+public class Main
+{   
+	public static void main(String[] args) {
+	    int score=20;
+	    Random randomobject =new Random();
+	   int guess=randomobject.nextInt(20);    
+	    Scanner sc=new Scanner(System.in);
+	  System.out.println("*****************************Sankhya anuman khel************************");
+
+	   System.out.println("To chaliye shriman shuru karte hai ye adbhut khel...!!");
+	   	System.out.println("aapko 0 se 20 tak sankhya ka anuman lagana hai..aur wo sankhy niche type kare:");
+
+for(int i=0;i<20;i++)
+{
+	   int a= sc.nextInt();
+	   if(a==guess)
+	   {
+	       System.out.println("Adbhut...avishvasniy..1core jeet gaye aap!!");
+	       System.out.println("score:"+score);
+	       break;
+	   }
+	else if(a<guess)
+	{
+	       System.out.println("Afsos!! galat jawab..aapka number thoda chota ho gaya");
+	    score--;
+	    	       System.out.println("score:"+score);
+	    	       if(score<=0)
+	    	       {
+                 System.out.println("sahi jawab:"+guess);
+	    	           
+	    	       }
+
+	}
+	   else
+	       {
+	       System.out.println("Afsos!! galat jawab..aapka number thoda bda ho gaya");
+score--;
+	       System.out.println("score:"+score);
+	    if(score<=0)
+	    	       {
+                 System.out.println("sahi jawab:"+guess);
+	    	           
+	    	       }
+
+
+}
+}
+	}
+}
