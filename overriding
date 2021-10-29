@@ -1,0 +1,21 @@
+
+class vech{
+       public void meth1(){
+           System.out.println("meth in Vech");
+       }
+    
+}
+class car extends vech{
+ @Override
+       public void meth1(){
+           System.out.println("meth in caar");
+       }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+    car obj=new car();
+	obj.meth1();
+}
+}
