@@ -1,0 +1,55 @@
+import java.util.*;
+abstract class parent1{
+    abstract void parent1();
+}
+
+abstract class  parent2 extends parent1{
+ abstract void parent2();
+    void hello(){
+        System.out.println("this is printnig in abstarct class");
+    }
+}
+
+interface inter_face{
+void playmusic();
+}
+interface inter_face2{
+void stopmusic();
+}
+interface inter_face3 extends inter_face2,inter_face{
+void deletemusic();
+}
+class child extends parent2 implements inter_face3{
+    void parent2(){
+        System.out.println("from parent2...");
+    }
+    void parent1(){
+        System.out.println("from parent 1..");
+    }
+   public void playmusic(){
+        System.out.println("playing music...");
+        
+    }
+    public void deletemusic(){
+        System.out.println("deleting music...");
+        
+    }
+    
+   public void stopmusic(){
+        System.out.println("stopping music...");
+        
+    }
+    public child(){
+        System.out.println("i am a child class");
+    }
+}
+ public class Main {
+     public static void main(String[] args){
+         child obj =new child();
+        obj.parent1();
+        obj.parent2();
+        obj.playmusic();
+        obj.stopmusic();
+        obj.deletemusic();
+}
+}
