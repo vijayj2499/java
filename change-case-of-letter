@@ -1,0 +1,22 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		char a;
+		Scanner obj=new Scanner(System.in);
+		a=obj.next().charAt(0);
+		if((int)a>=97)
+		{
+		    	System.out.println((char)
+		((int)a-32));
+		}
+		else
+		System.out.println((char)
+		((int)a+32));
+		
+		
+	}
+}
+      
